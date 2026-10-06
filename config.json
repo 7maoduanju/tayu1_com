@@ -1,0 +1,61 @@
+{
+    "dashboard_port": 18080,
+
+    "interval_sec": 60,
+    "timeout_sec": 5,
+    "retry_delay_sec": 5,
+
+    "resource_hold_sec": 300,
+    "recovery_checks": 2,
+
+    "cpu_limit": 80,
+    "memory_limit": 90,
+    "load_per_core_limit": 1.5,
+    "disk_limit": 90,
+
+    "deepseek": {
+        "enabled": true,
+        "url": "https://api.deepseek.com/chat/completions",
+        "model": "deepseek-flash",
+        "timeout_sec": 20,
+        "max_tokens": 600
+    },
+
+    "nodes": [
+        {
+            "id": "A",
+            "name": "Server A",
+            "probe_url": "https://probe-a.example.com/server_probe.php",
+            "probe_token_env": "PROBE_A_TOKEN",
+            "business_url": "https://www-a.example.com/"
+        },
+        {
+            "id": "B",
+            "name": "Server B",
+            "probe_url": "https://probe-b.example.com/server_probe.php",
+            "probe_token_env": "PROBE_B_TOKEN",
+            "business_url": "https://www-b.example.com/"
+        },
+        {
+            "id": "C",
+            "name": "Server C",
+            "probe_url": "https://probe-c.example.com/server_probe.php",
+            "probe_token_env": "PROBE_C_TOKEN",
+            "business_url": "https://www-c.example.com/"
+        },
+        {
+            "id": "D",
+            "name": "Server D",
+            "probe_url": "https://probe-d.example.com/server_probe.php",
+            "probe_token_env": "PROBE_D_TOKEN",
+            "business_url": "https://www-d.example.com/"
+        },
+        {
+            "id": "E",
+            "name": "Server E",
+            "probe_url": "https://probe-e.example.com/server_probe.php",
+            "probe_token_env": "PROBE_E_TOKEN",
+            "business_url": "https://www-e.example.com/"
+        }
+    ]
+}

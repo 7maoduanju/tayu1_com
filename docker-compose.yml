@@ -1,0 +1,55 @@
+services:
+
+  serverguard:
+
+    build: .
+
+    container_name: serverguard
+
+    restart: always
+
+    init: true
+
+    env_file:
+      - .env
+
+    ports:
+      - "127.0.0.1:18080:18080"
+
+    volumes:
+
+      - ./config.json:/app/config.json:ro
+
+      - ./data:/app/data
+
+      - ./logs:/app/logs
+
+    cpus: "0.50"
+
+    mem_limit: 128m
+
+    pids_limit: 64
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
+
+    healthcheck:
+
+      test:
+        [
+          "CMD",
+          "python3",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:18080/healthz', timeout=3)"
+        ]
+
+      interval: 60s
+
+      timeout: 5s
+
+      retries: 3
+
+      start_period: 30s

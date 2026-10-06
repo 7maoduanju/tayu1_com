@@ -1,0 +1,10 @@
+TG_BOT_TOKEN=你的Telegram_Bot_Token
+TG_CHAT_ID=你的Telegram_Chat_ID
+
+DEEPSEEK_API_KEY=你的DeepSeek_API_Key
+
+PROBE_A_TOKEN=随机长Token_A
+PROBE_B_TOKEN=随机长Token_B
+PROBE_C_TOKEN=随机长Token_C
+PROBE_D_TOKEN=随机长Token_D
+PROBE_E_TOKEN=随机长Token_E
