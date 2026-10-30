@@ -4,7 +4,7 @@ The All-in-One AI Short Film Workspace: From Idea to Final Cut
 
 "Your story, ready for the next scene."
 
-🌐 Official Website: https://drama-mill.com/
+🌐 Official Website: https://tayu1.com/
 
 📖 What is it?
 
@@ -78,4 +78,4 @@ Unlike many "black box" tools on the market, Drama Mill provides highly transpar
 
 🛠️ Troubleshooting Guides: Hardcore, practical guides on how to fix "face morphing," "lip-sync drift," and "blurry outputs."
 
-🔗 Visit Drama Mill(https://drama-mill.com/) to start creating your first AI short film today.
+🔗 Visit Drama Mill(https://tayu1.com/) to start creating your first AI short film today.
